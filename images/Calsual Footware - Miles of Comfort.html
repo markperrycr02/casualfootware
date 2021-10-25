@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calsual Footware - Miles of Comfort</title>
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 
+    /* Roboto Font */ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      img {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <div>
+        <div style="display: flex; align-items: center">
+          <i class="fas fa-map-marker-alt icon"></i>
+          &nbsp;40 Court Street | Pembroke | Hamilton | Bermuda
+        </div>
+      </div>
+      <div style="display: flex; align-items: center">
+        <i class="fa fa-fw fa-envelope icon"></i
+        >&nbsp;asualfootware@northrock.bm &nbsp;
+        <i class="fas fa-phone icon"></i>&nbsp;(441) 295-9968
+      </div>
+    </div>
+
+    <div class="header-container">
+      <div class="menu-left">
+        <div class="nav-links">
+          <ul>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact"></div>
+      <div class="logo-container">
+        <div class="logo">
+          <svg class="foot">
+            <use xlink:href="images/right-foot.svg#foot2"></use>
+          </svg>
+          <span>casual footware</span>
+          <svg class="foot">
+            <use xlink:href="images/right-foot.svg#foot1"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="menu-right">
+        <div class="nav-links">
+          <ul>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+            <li class="menu-item"><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-section">
+      <img src="images/loafer.png" />
+    </div>
+    <main class="main-content"></main>
+    <footer class="footer">
+      <div>Footer Column 1</div>
+      <div>Footer Column 2</div>
+      <div>Footer Column 3</div>
+    </footer>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
