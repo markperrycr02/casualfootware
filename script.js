@@ -3,3 +3,5 @@
 // circleBounce.addEventListener("click", () => {
 //   alert("Click!");
 // });
+
+console.log(document.body.clientWidth);
